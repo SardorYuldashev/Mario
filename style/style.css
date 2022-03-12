@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.container {
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+/* *********************************************** */
+.game {
+    padding: 50px 0;
+    background: linear-gradient(to bottom, white, rgb(75, 23, 23));
+    height: 84.8vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.game-start {
+    position: absolute;
+    top: 50px;
+    left: 40%;
+}
+
+.game-play {
+    width: 250px;
+}
+
+.mario-game {
+    position: relative;
+    overflow: hidden;
+    z-index: 6;
+}
+
+.game-level {
+    width: 100%;
+}
+
+.game-truba {
+    position: absolute;
+    left: 1113px;
+    top: 195px;
+    z-index: 2;
+}
+
+.game-block1 {
+    display: none;
+    position: absolute;
+    top: 201px;
+    left: 189px;
+}
+
+.game-block2 {
+    display: none;
+    position: absolute;
+    top: 200px;
+    left: 301px;
+}
+
+.game-monet {
+    display: none;
+    width: 25px;
+    position: absolute;
+    left: 189px;
+    top: 165px;
+}
+
+.mario-grib {
+    display: none;
+    position: absolute;
+    top: 180px;
+    left: 305px;
+    width: 20px;
+    animation-name: none;
+    animation-duration: 7s;
+    /* animation-duration: 2.1s; */
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.game-goomba {
+    position: absolute;
+    width: 25px;
+    left: 730px;
+    top: 265px;
+    animation-name: goomba;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.mario-run {
+    width: 30px;
+    position: absolute;
+    top: 260px;
+    left: 50px;
+    animation-name: none;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    transform: scale(1);
+}
+
+
+
+.game-audio {
+    display: none;
+}
+
+.game-pipe {
+    display: none;
+}
+
+.game-coin {
+    display: none;
+}
+
+.game-up {
+    display: none;
+}
+
+.mario-new {
+    position: absolute;
+    top: 300px;
+    left: 0;
+    width: 650px;
+    z-index: 2;
+}
+
+.game-logo {
+    position: absolute;
+    top: 400px;
+    left: 610px;
+    width: 500px;
+}
+
+@keyframes goomba {
+    0% {
+        left: 730px;
+    }
+
+    100% {
+        left: 842px;
+    }
+    
+}
+
+@keyframes grib {
+    0% {
+        left: 305px;
+    }
+
+    25% {
+        top: 180px;
+        left: 400px;        
+    }
+    38% {
+        left: 440px;
+        top: 270px;
+    }
+
+    100% {
+        top: 270px;
+        left: -25px;
+    }
+}
+
+@keyframes mario {
+    0% {
+        left: 50px;
+    }
+    45%{
+        left: 175px;
+        top: 260px;
+
+    }
+    50%{
+        left: 185px;
+        top: 215px;
+
+    }
+    55% {
+        left: 195px;
+        top: 260px;
+    }
+    100% {
+        left: 290px;
+    }
+}
+
+@keyframes mario2 {
+    0% {
+        left: 290px;
+        top: 260px;
+    }
+
+    5% {
+        left: 300px;
+        top: 215px;
+    }
+    10% {
+        left: 310px;
+        top: 260px;
+    }
+    55% {
+        left: 420px;
+        top: 260px;
+    }
+    60% {
+        left: 440px;
+        top: 215px;
+    }
+
+    70% {
+        left: 460px;
+        top: 215px;
+    }    
+
+    85% {
+        left: 500px;
+        top: 215px;
+    }
+
+    90% {
+        left: 510px;
+        top: 260px;
+    }
+
+    100% {
+        left: 530px;
+        top: 260px;
+    }
+
+}
+
+@keyframes mario3 {
+    0% {
+        left: 530px;
+        top: 260px;
+    }
+
+    60% {
+        top: 260px;
+        left: 645px;
+    }
+
+    65% {
+        left: 665px;
+        top: 190px;
+    }
+
+
+
+    100% {
+        left: 710px;
+        top: 190px;
+
+    }
+}
+
+@keyframes mario4 {
+    0% {
+        left: 710px;
+        top: 190px;
+    }
+
+    /* 10% {
+        top: 135px;
+        left: 760px;
+    } */
+    
+    17% {
+        top: 135px;
+        left: 770px;
+    }
+
+    35% {
+        top: 170px;
+        left: 860px;
+    }
+
+    60% {
+        top: 170px;
+        left: 905px;
+    }
+    73% {
+        top: 260px;
+        left: 920px;
+    }
+    100% {
+        left: 970px;
+        top: 260px;
+    }
+}
+
+@keyframes mario5 {
+    0% {
+        left: 970px;
+        top: 260px;
+    }
+
+    50% {
+        left: 1050px;
+        top: 260px;
+    }
+
+    65% {
+        left: 1090px;
+        top: 165px;
+    }
+
+    80% {
+        left: 1122px;
+        top: 165px;
+    }
+
+    100% {
+        left: 1122px;
+        top: 200px;
+    }
+}
